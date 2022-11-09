@@ -1,0 +1,9 @@
+.icon {
+    color: white;
+    font-size: xx-large;
+}
+
+.navbar {
+    display:flex;
+    align-items: left;
+}

@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "react-router-dom": "^6.4.3",
     "web-vitals": "^3.0.4"
   }
 }

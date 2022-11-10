@@ -1,0 +1,20 @@
+.weekly-div {
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+
+  .list-header {
+    color: grey;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-weight: bold;
+    color: black;
+    /* font-size: 32px; Not sure why this isn't doing anything */
+    background-color: lightgray;
+  }

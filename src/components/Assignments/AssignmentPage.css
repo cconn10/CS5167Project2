@@ -1,0 +1,25 @@
+.gridContainer {
+    height: 93%;
+    display: grid;
+    grid-template-columns: [start] 25% [line2] 25% [line3] 25% [line4] 25% [end];
+    grid-template-rows: [start] 35% [line2] 35% [line3] 25% [end];
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.classGrades {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column: start / line4;
+    grid-row: start / line3 ;
+}
+
+.filter{
+    position: relative;
+    right: 20px;
+    height: 100%;
+    padding: 20px;
+    grid-column: line4 / end;
+    grid-row: start / end ;
+}

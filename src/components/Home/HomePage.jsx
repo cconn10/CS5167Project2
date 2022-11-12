@@ -4,7 +4,7 @@ import './HomePage.css';
 
 import ClassCardContainer from './ClassCardContainer';
 import ToDoList from './ToDoList';
-import BadgeDisplay from './Badges/BadgeDisplay';
+import BadgeDisplay from '../Badges/BadgeDisplay';
 
 class HomePage extends Component {
     state = { 

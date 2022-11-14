@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import data from './data/metadata.json';
+import data from '../../data/metadata.json';
 
 
 class Grades extends Component {

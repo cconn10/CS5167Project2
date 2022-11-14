@@ -1,0 +1,19 @@
+{
+    "courses": [
+        {
+            "name": "Computer Graphics",
+            "professor": "Dr. Jillian Aurisano",
+            "description": "In this class we are going to learn fundamental principles in computer graphics. This means, we will be learning how computer graphics libraries work enable developers to create realistic looking scenes of objects."
+        },
+        {
+            "name": "Senior Design",
+            "professor": "Dr. Professor",
+            "description": "Senior design.  Senior design, senior design.  SENIOR DESIGN."
+        },
+        {
+            "name": "User Interface",
+            "professor": "Dr. Jillian Aurisano",
+            "description": "In this class we are going to explore user interface design- a computer science discipline that considers how to make computers and computational systems useful to people."
+        }
+    ]
+}

@@ -2,17 +2,24 @@ import React, { Component } from 'react';
 import './ClassCard.css'
 
 class ClassCard extends Component {
-    state = { 
-     } 
+
+    state = { } 
+
+    handleURL = name => {
+        console.log(name);
+        name.toLowerCase().split(' ').join('-');
+    };
+
     render() { 
+        const courseInfo = this.props.courseInfo
         return (
             <React.Fragment>
                 <div className="card">
-                    <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2132.png" className="card-img-top" alt="UC Logo" />
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+                    <div className="card-body d-flex flex-column">
+                        <h5 className="card-title">{courseInfo.name}</h5>
+                        <h6 className='card-subtitle text-muted my-2'>{courseInfo.professor}</h6>
+                        <p className="card-text">{courseInfo.description}</p>
+                        <a href={"/Courses/" + this.handleURL(courseInfo.name)} className="btn btn-primary mt-auto">View Class Page</a>
                     </div>
                 </div>
             </React.Fragment>

@@ -3,14 +3,28 @@
     height: auto;
 }
 
-.card {
-    width: 350px;
-    margin: 10px 60px;
-    padding: 10px;
+@media screen and (min-width: 1125px) {
+    .card {
+        width: 375px;
+        margin: 10px 3%;
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 24px;;
+    }
 }
 
-.card-title {
-    font-size: 16px;;
+@media screen and (max-width: 1125px) {
+    .card {
+        width: 300px;
+        margin: 10px 3%;
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+
 }
 
 .card-text{

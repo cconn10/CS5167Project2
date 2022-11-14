@@ -6,7 +6,6 @@ class ClassCard extends Component {
     state = { } 
 
     handleURL = name => {
-        console.log(name);
         name.toLowerCase().split(' ').join('-');
     };
 
@@ -19,7 +18,7 @@ class ClassCard extends Component {
                         <h5 className="card-title">{courseInfo.name}</h5>
                         <h6 className='card-subtitle text-muted my-2'>{courseInfo.professor}</h6>
                         <p className="card-text">{courseInfo.description}</p>
-                        <a href={"/Courses/" + this.handleURL(courseInfo.name)} className="btn btn-primary mt-auto">View Class Page</a>
+                        <a href={"/Courses/" + this.handleURL(courseInfo.name)} className="btn btn-primary mt-auto">View Course Page</a>
                     </div>
                 </div>
             </React.Fragment>

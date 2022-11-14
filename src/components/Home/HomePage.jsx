@@ -7,10 +7,21 @@ import ToDoList from './ToDoList';
 import BadgeDisplay from '../Badges/BadgeDisplay';
 
 import CourseInfo from '../../course-data/courseInfo.json'
+import Data from '../../course-data/data.json'
 
 class HomePage extends Component {
-    state = { 
-     }
+    state = { }
+
+    
+
+    getToDoItems = () => [
+        ...this.compileToDoItems(Data.ui), 
+        ...this.compileToDoItems(Data.computer_graphics),
+        ...this.compileToDoItems(Data.senior_design)
+    ];
+
+
+    compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("9/11/22"));
 
     render() { 
         return (
@@ -20,7 +31,7 @@ class HomePage extends Component {
                     <ClassCardContainer courseInfo={CourseInfo}></ClassCardContainer>
                 </div>
                 <div className="toDoList">
-                    <ToDoList></ToDoList>
+                    <ToDoList courseInfo={CourseInfo} toDoItems={this.getToDoItems()}></ToDoList>
                 </div>
                 <div className="badgeDisplay">
                     <BadgeDisplay></BadgeDisplay>

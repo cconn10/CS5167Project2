@@ -13,7 +13,7 @@ class Navbar extends Component {
                 <a className='nav-link' href="/" data-toggle="tooltip" data-bs-placement="bottom" title="Profile" >
                     <FontAwesomeIcon className='icon mx-2' icon={ faCircleUser } />
                 </a>
-                <a className='nav-link' href="/" data-toggle="tooltip" data-bs-placement="bottom" title="Courses" >
+                <a className='nav-link' href="/Modules" data-toggle="tooltip" data-bs-placement="bottom" title="Courses" >
                     <FontAwesomeIcon className='icon mx-2' icon={ faBook } />
                 </a>
                 <a className='nav-link' href="/Assignments" data-toggle="tooltip" data-bs-placement="bottom" title="Grades" >

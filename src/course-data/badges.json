@@ -1,0 +1,49 @@
+{
+    "badges": [
+        {
+            "name": "Syllabus Week",
+            "description": "View 3 Home Pages",
+            "type": "Syllabus",
+            "point_value": 5,
+            "assignments_submitted": 2,
+            "required_submissions": 3,
+            "is_claimed": false
+        },
+        {
+            "name": "A Good Start",
+            "description": "Submit 1 Assignment",
+            "type": "Assignment",
+            "point_value": 10,
+            "assignments_submitted": 4,
+            "required_submissions": 1,
+            "is_claimed": false
+        },
+        {
+            "name": "Studious",
+            "description": "Submit 5 Assignments",
+            "type": "Assignment",
+            "point_value": 10,
+            "assignments_submitted": 4,
+            "required_submissions": 5,
+            "is_claimed": false
+        },
+        {
+            "name": "Halfway There!",
+            "description": "Submit 10 Assignments",
+            "type": "Assignment",
+            "point_value": 20,
+            "assignments_submitted": 4,
+            "required_submissions": 10,
+            "is_claimed": false
+        },
+        {
+            "name": "Finishing Strong!",
+            "description": "Submit 20 Assignments",
+            "type": "Assignment",
+            "point_value": 40,
+            "assignments_submitted": 4,
+            "required_submissions": 20,
+            "is_claimed": false
+        }
+    ]
+}

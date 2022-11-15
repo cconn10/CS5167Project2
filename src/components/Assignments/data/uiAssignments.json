@@ -1,0 +1,28 @@
+﻿{
+    "assignments": [
+        {
+            "name": "07.html",
+            "folder": "assignment",
+            "type": "project",
+            "grading": "project",
+            "points": "50",
+            "start_or_posted": "9/7/22",
+            "end_or_due": "10/14/22",
+            "module": "na",
+            "title": "Project 1 implementation",
+            "reference": "project1.html,assignment_03.html"
+        },
+        {
+            "name": "08.html",
+            "folder": "assignment",
+            "type": "project",
+            "grading": "project",
+            "points": "40",
+            "start_or_posted": "9/7/22",
+            "end_or_due": "10/16/22",
+            "module": "na",
+            "title": "Project 1 documentation",
+            "reference": "project1.html,assignment_03.html,07.html"
+        }
+    ]
+}

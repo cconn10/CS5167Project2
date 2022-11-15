@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import WeekMod from './weekmod';
 import ToDoList from '../Home/ToDoList';
 import './modules.css';
-import Accordion from './Accordion';
+import WeekAccordion from './WeekAccordion';
 
 import data from '../../data/metadata.json';
 
@@ -48,7 +48,7 @@ class Modules extends Component {
                 <div class="modulesContainer">
                     <div className="accordion">
                         {modules.map(({ title, content }) => (
-                        <Accordion title={title} content={content} />
+                        <WeekAccordion title={title} content={content} />
                         ))}
                     </div>
                     {/* {modules.map(module => (

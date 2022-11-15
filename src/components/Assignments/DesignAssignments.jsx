@@ -1,8 +1,5 @@
 import React from 'react';
 import JsonData from './data/designAssignments.json';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-import './assignmentStyle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
 

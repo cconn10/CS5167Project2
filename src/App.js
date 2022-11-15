@@ -9,7 +9,7 @@ import HomePage from './components/Home/HomePage';
 import AssignmentPage from "./components/Assignments/AssignmentPage";
 import Modules from './components/Modules/modules';
 
-import myData from './course-data/data.json';
+import myData from './data/metadata.json';
 
 class App extends Component {
   state = {

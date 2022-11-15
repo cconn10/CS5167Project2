@@ -8,12 +8,7 @@ import Navbar from './components/NavBar/Navbar';
 import HomePage from './components/Home/HomePage';
 import AssignmentPage from "./components/Assignments/AssignmentPage";
 
-import myData from './course-data/data.json';
-
 class App extends Component {
-  componentDidMount() {
-    console.log(myData);
-  }
 
   render() {
     return (

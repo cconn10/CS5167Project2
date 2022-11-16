@@ -22,7 +22,7 @@ class Navbar extends Component {
                 <a className='nav-link' href="/Assignments" data-toggle="tooltip" data-bs-placement="bottom" title="Grades" >
                     <FontAwesomeIcon className='icon mx-2' icon={ faClipboard } />
                 </a>
-                <a className='nav-link' href="/" data-toggle="tooltip" data-bs-placement="bottom" title="Calendar" >
+                <a className='nav-link' href="/Calendar" data-toggle="tooltip" data-bs-placement="bottom" title="Calendar" >
                     <FontAwesomeIcon className='icon mx-2' icon={ faCalendar }/>
                 </a>
             </nav>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import WeekMod from './weekmod';
 import ToDoList from '../Home/ToDoList';
 import './modules.css';
 import WeekAccordion from './WeekAccordion';

@@ -13,23 +13,13 @@ export default class FileInfo extends Component {
           return null;
       }
       return (
-        <div>
-          <div className="file-info-grid">
-            {/* <div className="file-info-grid-item"> */}
-              {this.props.name}
-            {/* </div> */}
-            {/* <div className="file-info-grid-item"> */}
-                <button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-asignment' icon={ faDownload } /></button>
-            {/* </div> */}
-            {/* <div className="file-info-grid-item"> */}
-              <button
-                onClick={e => {
-                  this.onClose(e);
-                }}
-              >
-                Close
-              </button>
-            {/* </div> */}
+        <div className="announcement-text">
+          <div>{this.props.name}</div>
+          <div className="reply">Reply:
+            <input type="text" id="lname" name="lname"></input>
+          
+          {/* <button onClick={e => {this.onClose(e);}}>Close</button> */}
+          <button>Post</button>
           </div>
         </div>
       );

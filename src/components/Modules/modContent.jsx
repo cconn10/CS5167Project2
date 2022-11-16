@@ -42,10 +42,10 @@ class ModContent extends Component {
                 Announcements
             </div>
             {module.announcements.map((announcement, index) => (
-                    <ModFile
+                    <Announcement
                         key={index}
                         file={announcement}
-                    ></ModFile>
+                    ></Announcement>
                 ))}
             
             <div class="list-header">

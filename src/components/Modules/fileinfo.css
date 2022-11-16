@@ -10,6 +10,20 @@
     text-align: right;
 } */
 
-.file-info-grid {
+.announcement-text {
     margin-left: 30px;
+    font-size: 14px;
 }
+
+.reply {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+input {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 80%;
+  }

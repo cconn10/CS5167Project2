@@ -9,7 +9,7 @@ function JsonDataDisplay(){
             return(
                 <tr>
                     <td>{info.title}</td>
-                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faDownload } /></button>}</td>
+                    <td>{<button type="button" class="btn btn-light"><FontAwesomeIcon className='icon-assignment' icon={ faDownload } /></button>}</td>
                     <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faUpload } /></button>}</td>
                     <td>{info.end_or_due}</td>
                     <td>{info.points}</td>
@@ -19,8 +19,7 @@ function JsonDataDisplay(){
     )
 
     return(
-        <div>
-            <div id="accordion">
+        <div id="accordion">
                 <div class="card">
                     <div class="card-header bg-warning text-white" id="headingOne">
                         <h5 class="mb-0">
@@ -48,7 +47,7 @@ function JsonDataDisplay(){
                     </div>
                 </div>
              </div>
-        </div>
+
     )
 }
 

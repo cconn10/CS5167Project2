@@ -1,5 +1,6 @@
 import React from 'react';
 import JsonData from './data/designAssignments.json';
+import 'reactjs-popup/dist/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
 
@@ -26,7 +27,7 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-success text-white" id="headingOne">
+                    <div class="card-header bg-danger text-white" id="headingOne">
                         <h5 class="mb-0">
                             SENIOR DESIGN: Assignments
                          </h5>

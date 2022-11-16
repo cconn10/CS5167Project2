@@ -22,7 +22,7 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-info text-white" id="headingOne">
+                    <div class="card-header bg-success text-white" id="headingOne">
                         <h5 class="mb-0">
                             USER INTERFACE 1: Assignments
                          </h5>

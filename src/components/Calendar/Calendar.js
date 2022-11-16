@@ -256,4 +256,4 @@ function CanvasCalendar() {
 
     }
 
-export default Calendar;
+export default CanvasCalendar;

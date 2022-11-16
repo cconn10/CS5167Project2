@@ -8,8 +8,12 @@ import CanvasCalendar from './components/Calendar/Calendar'
 import Navbar from './components/NavBar/Navbar';
 import HomePage from './components/Home/HomePage';
 import AssignmentPage from "./components/Assignments/AssignmentPage";
+import Modules from './components/Modules/modules';
+
+
 
 class App extends Component {
+
 
   render() {
 
@@ -20,6 +24,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/Assignments" element={<AssignmentPage />}></Route>
+            <Route path="/Modules" element={<Modules/>}></Route>
             <Route path="/Calendar" element={<CanvasCalendar />}></Route>
           </Routes>
         </BrowserRouter>

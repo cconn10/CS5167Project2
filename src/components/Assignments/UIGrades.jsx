@@ -21,11 +21,11 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-info text-white" id="headingOne">
+                    <div class="card-header bg-success text-white" id="headingOne">
                         <h5 class="mb-0">
                             USER INTERFACE 1:
                          </h5>
-                         <h3>81%</h3>
+                         <h3>93%</h3>
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">

@@ -21,12 +21,12 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-success text-white" id="headingOne">
+                    <div class="card-header bg-danger text-white" id="headingOne">
                         <h5 class="mb-0">
                             SENIOR DESIGN:
                          </h5>
                          <h3>
-                            93%
+                            43%
                          </h3>
                     </div>
 

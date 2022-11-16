@@ -56,7 +56,10 @@ class Modules extends Component {
                     </div>
                 </div>
                 <div className="toDoList">
-                    <ToDoList courseInfo={CourseInfo} toDoItems={this.getToDoItems()}></ToDoList>
+                    <ToDoList courseInfo={CourseInfo} 
+                        uiToDoItems={this.compileToDoItems(Data.ui)} 
+                        seniorDesignToDoItems={this.compileToDoItems(Data.senior_design)} 
+                        computerGraphicsToDoItems={this.compileToDoItems(Data.computer_graphics)} ></ToDoList>
                 </div>
             </div> 
         )

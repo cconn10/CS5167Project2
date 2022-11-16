@@ -51,9 +51,9 @@ class Modules extends Component {
             <div class="gridContainer">
                 {/* <div class="courseView"> */}
                     <div class="courseTitle">Courses:</div>
-                    <div class="courseCheck"><input type="checkbox" id="checkbox-ui" name="ui" value="ui" />User Interfaces</div>
+                    {/* <div class="courseCheck"><input type="checkbox" id="checkbox-ui" name="ui" value="ui" />User Interfaces</div>
                     <div class="courseCheck"><input type="checkbox" id="checkbox-cg" name="computer_graphics" value="computer_graphics" />Computer Graphics</div>
-                    <div class="courseCheck"><input type="checkbox" id="checkbox-sd" name="senior_design" value="senior_design" />Senior Design</div>
+                    <div class="courseCheck"><input type="checkbox" id="checkbox-sd" name="senior_design" value="senior_design" />Senior Design</div> */}
                 {/* </div> */}
                 <div class="modulesContainer">
                     <div className="accordion">

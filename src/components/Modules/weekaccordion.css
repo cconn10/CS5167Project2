@@ -20,29 +20,29 @@
     margin: 2rem 0 4rem 0;
   } */
   
-  .accordion {
+  .week-accordion {
     max-width: 1000px;
     /* margin: 2rem auto; */
   }
   
-  .accordion-title {
+  .week-accordion-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #21aeca;
+    background-color: gray;
   }
   
-  .accordion-title:hover {
-    background-color: #3ab4cc;
+  .week-accordion-title:hover {
+    background-color: lightgray;
   }
   
-  .accordion-title,
-  .accordion-content {
+  .week-accordion-title,
+  .week-accordion-content {
     padding: 1rem;
   }
   
-  .accordion-content {
+  .week-accordion-content {
     background-color:  white;
   }
   
@@ -51,7 +51,12 @@
       font-size: 18px;
     }
   
-    .accordion {
+    .week-accordion {
       width: 90%;
     }
+  }
+
+  .course-name {
+    font-size: 30px;
+    font-weight: bold
   }

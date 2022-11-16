@@ -8,7 +8,7 @@ class ModContent extends Component {
         console.log(module);
         const formattedContent = {
             announcements: ["Sample Announcement 1", "Sample Announcement 2"],
-            files: [...new Set(module.filter(item => item.folder === "presentations" || "pages"))]
+            files: [...new Set(module.filter(item => (item.folder === "presentations" || item.folder === "pages" || item.folder === "course_info")))]
         };
         return (formattedContent);
     }

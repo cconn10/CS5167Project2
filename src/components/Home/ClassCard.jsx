@@ -13,6 +13,7 @@ class ClassCard extends Component {
         const courseInfo = this.props.courseInfo
         return (
             <React.Fragment>
+            <div className="card-home">
                 <div className="card">
                     <div className="card-body d-flex flex-column">
                         <h5 className="card-title">{courseInfo.name}</h5>
@@ -20,6 +21,7 @@ class ClassCard extends Component {
                         <p className="card-text">{courseInfo.description}</p>
                         <a href={"/Courses/" + this.handleURL(courseInfo.name)} className="btn btn-primary mt-auto">View Course Page</a>
                     </div>
+                </div>
                 </div>
             </React.Fragment>
         );

@@ -22,7 +22,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/Assignments" element={<AssignmentPage />}></Route>
-            <Route path="/Modules" element={<Modules modules={this.state.modules}/>}></Route>
+            <Route path="/Modules" element={<Modules/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

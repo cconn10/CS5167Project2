@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './accordion.css';
+import ModContent from './modContent';
 
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
@@ -11,7 +12,12 @@ const Accordion = ({ title, content }) => {
         <div>{title}</div>
         <div>{isActive ? '-' : '+'}</div>
       </div>
-      {isActive && <div className="accordion-content">{content}</div>}
+      {isActive && <div className="accordion-content">
+                      {<ModContent 
+                        key={0} 
+                        content = {content}
+                      ></ModContent>}
+                    </div>}
     </div>
   );
 };

@@ -7,7 +7,7 @@ class ModFile extends Component {
         
         console.log(file);
         return (
-            <p><span>{file}</span></p>
+            <p><span>{file.title}</span></p>
         );
     }
 }

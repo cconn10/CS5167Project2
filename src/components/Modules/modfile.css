@@ -1,0 +1,11 @@
+.file-info-grid {
+    display: grid;
+    grid-template-columns: [start] 50% [line2] 40% [line3] 10% [line4] 0% [end];
+}
+.file-info-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 2px;
+    font-size: 14px;
+    text-align: left;
+}

@@ -1,25 +1,11 @@
 import React, { Component } from 'react';
 import './modfile.css';
-// import PopUp from './PopUp';
-// import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
+import {faDownload, faUpload, faEye} from '@fortawesome/free-solid-svg-icons';
 
-import Modal from '../Modal';
-import '../Home/ToDoList.css';
-
-
+import FileInfo from './FileInfo';
 
 class ModFile extends Component {
-    // state = {
-    //     seen: false
-    // };
-    // togglePop = () => {
-    // this.setState({
-    //     seen: !this.state.seen
-    // });
-    // console.log(this.state.seen);
-    // };
     state = {
         show: false
       };
@@ -27,46 +13,30 @@ class ModFile extends Component {
         this.setState({
           show: !this.state.show
         });
-        console.log("state: ");
-        console.log(this.state.show);
     };
     
-
     render() {
         const {file} = this.props;
+
+        let iconName = faDownload;
+        if (file.type == "announcement") {
+            iconName = faEye;
+        }
         
         console.log(file);
         return (
             <React.Fragment>
-                <span>{file.title}</span>
-                <button type="button" class="btn btn-light" onClick={e => {this.showModal();}}><FontAwesomeIcon className='icon-asignment' icon={ faDownload } /></button>
-                <Modal onClose={this.showModal} show={this.state.show}>
-                        Message in Modal
-                </Modal>
-                {/* <div className="btn" onClick={this.togglePop}>
-                    <button>New User?</button>
+                <div className="file-info-grid">
+                    {/* <div className="file-info-grid-item"><button type="button" class="btn btn-light" onClick={e => {this.showModal();}}>{file.title}</button></div> */}
+                    <div className="file-info-grid-item">{file.title}</div>
+                    <div className="file-info-grid-item">Posted: <span>{file.start_or_posted}</span></div>
+                    <button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-asignment' icon={ iconName } /></button>
                 </div>
-                {this.state.seen ? <PopUp toggle={this.togglePop} /> : null} */}
-                {/* <div className="modal" id="modal" tabIndex="-1">
-                            <div className="modal-dialog modal-dialog-centered">
-                                <div className="modal-content">
-                                    <div className="modal-header">
-                                    <div className='col'>
-                                        <div className='row'>
-                                            <h5 className="modal-title">Title</h5>
-                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div className='row'>
-                                            <p className='h6'>Due Date:</p>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div className="modal-body">
-                                    </div>
-                                </div>
-                            </div>
-                </div> */}
-                        
+                {/* <FileInfo 
+                    onClose={this.showModal} 
+                    show={this.state.show}
+                    name={file.name}
+                ></FileInfo><br></br> */}
             </React.Fragment>
         );
     }

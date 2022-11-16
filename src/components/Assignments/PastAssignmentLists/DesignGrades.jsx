@@ -1,16 +1,15 @@
 import React from 'react';
-import JsonData from './data/uiAssignments.json';
+import JsonData from '../data/designGrades.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
+import {faDownload} from '@fortawesome/free-solid-svg-icons';
 
 function JsonDataDisplay(){
-    const DisplayData = JsonData.assignments.map(
+    const DisplayData = JsonData.grades.map(
         (info)=>{
             return(
                 <tr>
                     <td>{info.title}</td>
-                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-asignment' icon={ faDownload } /></button>}</td>
-                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faUpload } /></button>}</td>
+                    <td>{<button type="button" class="btn btn-light"><FontAwesomeIcon className='icon-assignment' icon={ faDownload } /></button>}</td>
                     <td>{info.end_or_due}</td>
                     <td>{info.points}</td>
                 </tr>
@@ -22,10 +21,13 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-info text-white" id="headingOne">
+                    <div class="card-header bg-danger text-white" id="headingOne">
                         <h5 class="mb-0">
-                            USER INTERFACE 1: Assignments
+                            SENIOR DESIGN:
                          </h5>
+                         <h3>
+                            43%
+                         </h3>
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -34,10 +36,9 @@ function JsonDataDisplay(){
                                     <thead>
                                         <tr>
                                             <th scope="col">Assignment</th>
-                                            <th scope="col">Download</th>
-                                            <th scope="col">Submit</th>
+                                            <th scope="col">Download Submission</th>
                                             <th scope="col">Due Date</th>
-                                            <th scope="col">Points</th>
+                                            <th scope="col">Grade</th>
                                         </tr>
                                     </thead>
                                     <tbody>

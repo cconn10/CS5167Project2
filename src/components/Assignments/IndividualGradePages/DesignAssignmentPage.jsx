@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DesignGradeTable from './DesignGrades';
-import DesignAssignmentTable from './DesignAssignments';
+import DesignGradeTable from './PastAssignmentLists/DesignGrades';
+import DesignAssignmentTable from './UpcomingAssignmentLists/DesignAssignments';
 import './AssignmentPage.css';
 
 class DesignAssignmentPage extends Component {

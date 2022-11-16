@@ -1,15 +1,16 @@
 import React from 'react';
-import JsonData from './data/designGrades.json';
+import JsonData from '../data/graphicAssignments.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faDownload} from '@fortawesome/free-solid-svg-icons';
+import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
 
 function JsonDataDisplay(){
-    const DisplayData = JsonData.grades.map(
+    const DisplayData = JsonData.assignments.map(
         (info)=>{
             return(
                 <tr>
                     <td>{info.title}</td>
                     <td>{<button type="button" class="btn btn-light"><FontAwesomeIcon className='icon-assignment' icon={ faDownload } /></button>}</td>
+                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faUpload } /></button>}</td>
                     <td>{info.end_or_due}</td>
                     <td>{info.points}</td>
                 </tr>
@@ -18,16 +19,12 @@ function JsonDataDisplay(){
     )
 
     return(
-        <div>
-            <div id="accordion">
+        <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-success text-white" id="headingOne">
+                    <div class="card-header bg-warning text-white" id="headingOne">
                         <h5 class="mb-0">
-                            SENIOR DESIGN:
+                            GRAPHIC DESIGN: Assignments
                          </h5>
-                         <h3>
-                            93%
-                         </h3>
                     </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -36,9 +33,10 @@ function JsonDataDisplay(){
                                     <thead>
                                         <tr>
                                             <th scope="col">Assignment</th>
-                                            <th scope="col">Download Submission</th>
+                                            <th scope="col">Download</th>
+                                            <th scope="col">Submit</th>
                                             <th scope="col">Due Date</th>
-                                            <th scope="col">Grade</th>
+                                            <th scope="col">Points</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -49,7 +47,7 @@ function JsonDataDisplay(){
                     </div>
                 </div>
              </div>
-        </div>
+
     )
 }
 

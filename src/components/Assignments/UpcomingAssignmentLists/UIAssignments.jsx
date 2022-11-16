@@ -1,5 +1,5 @@
 import React from 'react';
-import JsonData from './data/graphicAssignments.json';
+import JsonData from '../data/uiAssignments.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,7 @@ function JsonDataDisplay(){
             return(
                 <tr>
                     <td>{info.title}</td>
-                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faDownload } /></button>}</td>
+                    <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-asignment' icon={ faDownload } /></button>}</td>
                     <td>{<button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-assignment' icon={ faUpload } /></button>}</td>
                     <td>{info.end_or_due}</td>
                     <td>{info.points}</td>
@@ -22,9 +22,9 @@ function JsonDataDisplay(){
         <div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header bg-warning text-white" id="headingOne">
+                    <div class="card-header bg-success text-white" id="headingOne">
                         <h5 class="mb-0">
-                            GRAPHIC DESIGN: Assignments
+                            USER INTERFACE 1: Assignments
                          </h5>
                     </div>
 

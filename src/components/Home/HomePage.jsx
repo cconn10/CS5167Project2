@@ -12,15 +12,6 @@ import Data from '../../course-data/data.json'
 class HomePage extends Component {
     state = { }
 
-    
-
-    getToDoItems = () => [
-        ...this.compileToDoItems(Data.ui), 
-        ...this.compileToDoItems(Data.computer_graphics),
-        ...this.compileToDoItems(Data.senior_design)
-    ];
-
-
     compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("9/11/22"));
 
     render() { 
@@ -31,7 +22,10 @@ class HomePage extends Component {
                     <ClassCardContainer courseInfo={CourseInfo}></ClassCardContainer>
                 </div>
                 <div className="toDoList">
-                    <ToDoList courseInfo={CourseInfo} toDoItems={this.getToDoItems()}></ToDoList>
+                    <ToDoList courseInfo={CourseInfo} 
+                        uiToDoItems={this.compileToDoItems(Data.ui)} 
+                        seniorDesignToDoItems={this.compileToDoItems(Data.senior_design)} 
+                        computerGraphicsToDoItems={this.compileToDoItems(Data.computer_graphics)} ></ToDoList>
                 </div>
                 <div className="badgeDisplay">
                     <BadgeDisplay></BadgeDisplay>

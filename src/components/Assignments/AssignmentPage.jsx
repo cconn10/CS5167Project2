@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Grades from './Grades';
-import Assignments from './Assignments';
+import Grades from './PastAssignmentLists/Grades';
+import Assignments from './UpcomingAssignmentLists/Assignments';
 import './AssignmentPage.css';
 
 class AssignmentPage extends Component {

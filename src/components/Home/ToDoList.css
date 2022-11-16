@@ -2,12 +2,37 @@
     color: black
 }
 
-.toDoList::-webkit-scrollbar {
+.toDoListItems::-webkit-scrollbar {
     display: none;
 }
   
-.toDoList {
+.toDoListItems {
+    height: 95%;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+.detailsButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.form-check-input:checked {
+    background-color: #E00122;
+    border-color: #E00122;
+}
+
+.modal-header{
+    background-color: #E00122;
+    color: whitesmoke;
+}
+
+.btn-close {
+    background-color: whitesmoke;
+    color: whitesmoke;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }

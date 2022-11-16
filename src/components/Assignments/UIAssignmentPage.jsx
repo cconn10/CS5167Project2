@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Grades from './Grades';
-import Assignments from './Assignments';
+import UIGradeTable from './UIGrades';
+import UIAssignmentTable from './UIAssignments';
 import './AssignmentPage.css';
 
 class AssignmentPage extends Component {
@@ -9,8 +9,8 @@ class AssignmentPage extends Component {
         return (
             <div className="gridContainer">
                 <div className="classGrades">
-                    <Assignments></Assignments>
-                    <Grades></Grades>
+                    <UIAssignmentTable></UIAssignmentTable>
+                    <UIGradeTable></UIGradeTable>
                 </div>
             </div>
 

@@ -15,7 +15,6 @@
 
 .badgeDisplay {
     padding: 20px;
-    margin: 0 20px;
     width: 96%;
     height: 100%;
     grid-column: start / line4;

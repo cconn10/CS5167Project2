@@ -11,15 +11,12 @@
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    grid-column: start / line4;
-    grid-row: start / line3 ;
+    margin-bottom: 10px;
+    grid-column: start / line6;
+    grid-row: start / end ;
+    padding: 20px;
 }
 
-.filter{
-    position: relative;
-    right: 20px;
-    height: 100%;
-    padding: 20px;
-    grid-column: line4 / end;
-    grid-row: start / end ;
+.headingOne{
+    background-color: brown;
 }

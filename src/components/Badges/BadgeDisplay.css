@@ -1,6 +1,8 @@
-.badgeDisplay {
-    margin: 20px 10;
-    padding: 20px;
-    grid-column: 1 / 4;
-    grid-row: 4 / end ;
+.badge-display {
+    width: 70%;
+    height: 200px;
+}
+
+.see-all {
+    height: 30px;
 }

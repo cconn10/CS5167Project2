@@ -13,7 +13,7 @@ class ClassCard extends Component {
         const courseInfo = this.props.courseInfo
         return (
             <React.Fragment>
-                <div className="card">
+                <div className="card card-home">
                     <div className="card-body d-flex flex-column">
                         <h5 className="card-title">{courseInfo.name}</h5>
                         <h6 className='card-subtitle text-muted my-2'>{courseInfo.professor}</h6>

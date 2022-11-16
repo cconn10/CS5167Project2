@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import UIGradeTable from './UIGrades';
-import UIAssignmentTable from './UIAssignments';
+import UIGradeTable from './PastAssignmentLists/UIGrades';
+import UIAssignmentTable from './UpcomingAssignmentLists/UIAssignments';
 import './AssignmentPage.css';
 
-class AssignmentPage extends Component {
+class UIAssignmentPage extends Component {
     
     render() { 
         return (
@@ -18,4 +18,4 @@ class AssignmentPage extends Component {
     }
 };
  
-export default AssignmentPage;
+export default UIAssignmentPage;

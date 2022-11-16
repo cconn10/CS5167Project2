@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import GraphicGradeTable from './GraphicsGrades';
-import GraphicAssignmentTable from './GraphicsAssignments';
+import GraphicGradeTable from './PastAssignmentLists/GraphicsGrades';
+import GraphicAssignmentTable from './UpcomingAssignmentLists/GraphicsAssignments';
 import './AssignmentPage.css';
 
-class UIAssignmentPage extends Component {
+class GraphicAssignmentPage extends Component {
     
     render() { 
         return (
@@ -18,4 +18,4 @@ class UIAssignmentPage extends Component {
     }
 };
  
-export default UIAssignmentPage;
+export default GraphicAssignmentPage;

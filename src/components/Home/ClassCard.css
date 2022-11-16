@@ -4,7 +4,7 @@
 }
 
 @media screen and (min-width: 1125px) {
-    .card {
+    .card-home {
         width: 375px;
         margin: 10px 3%;
         padding: 10px;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 1125px) {
-    .card {
+    .card-home {
         width: 300px;
         margin: 10px 3%;
         padding: 10px;

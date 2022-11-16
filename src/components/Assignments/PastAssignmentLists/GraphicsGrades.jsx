@@ -1,5 +1,5 @@
 import React from 'react';
-import JsonData from './data/graphicGrades.json';
+import JsonData from '../data/graphicGrades.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload} from '@fortawesome/free-solid-svg-icons';
 

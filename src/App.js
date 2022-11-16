@@ -11,6 +11,7 @@ import AssignmentPage from "./components/Assignments/AssignmentPage";
 class App extends Component {
 
   render() {
+
     return (
       <div className="App">
         <Navbar></Navbar>

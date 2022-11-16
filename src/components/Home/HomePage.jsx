@@ -17,7 +17,7 @@ class HomePage extends Component {
     render() { 
         return (
             <React.Fragment> 
-                <div className="gridContainer">
+                <div className="homePageContainer">
                 <div className="classCardContainer">
                     <ClassCardContainer courseInfo={CourseInfo}></ClassCardContainer>
                 </div>

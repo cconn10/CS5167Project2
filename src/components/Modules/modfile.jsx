@@ -5,6 +5,10 @@ import './modfile.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faDownload, faUpload} from '@fortawesome/free-solid-svg-icons';
 
+import Modal from './Modal';
+
+
+
 class ModFile extends Component {
     state = {
         seen: false
@@ -24,6 +28,7 @@ class ModFile extends Component {
             <div>
                 <span>{file.title}</span>
                 <button type="button" class="btn btn-light" ><FontAwesomeIcon className='icon-asignment' icon={ faDownload } /></button>
+                {/* <Modal /> */}
                 {/* <div className="btn" onClick={this.togglePop}>
                     <button>New User?</button>
                 </div>

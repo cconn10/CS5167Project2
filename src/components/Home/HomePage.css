@@ -1,4 +1,4 @@
-.gridContainer {
+.homePageContainer {
     height: 93%;
     display: grid;
     grid-template-columns: [start] 25% [line2] 25% [line3] 25% [line4] 25% [end];

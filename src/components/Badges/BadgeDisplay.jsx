@@ -20,12 +20,7 @@ class BadgeDisplay extends Component {
             <React.Fragment>
                 <div className='container border border-2 border-primary rounded badge-display p-3'>
                     <div className='row d-flex align-items-center pb-2'>
-                        <div className='col-2'>
-                            <h3>Badges</h3>
-                        </div>
-                        <div className='col'>
-                            <button className="btn btn-primary rounded-pill d-flex align-items-center see-all">See all</button>
-                        </div>
+                        <h3>Badges</h3>
                     </div>
                     <div className='d-flex align-items-center '>
                         {badges.map((badge, index) => {

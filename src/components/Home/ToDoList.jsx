@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Modal from '../Modal';
-
 import './ToDoList.css'
 
 class ToDoList extends Component {
@@ -55,39 +53,37 @@ class ToDoList extends Component {
                                             <li>
                                                 <input className="form-check-input" type="checkbox" value="" />
                                                 <label className="form-check-label">
-                                                    Goal #1
+                                                    Deliverable #1
                                                 </label>
-                                                <ul>
-                                                    <li>
-                                                        <input className="form-check-input" type="checkbox" value="" />
-                                                        <label className="form-check-label">
-                                                            Subgoal #1
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <input className="form-check-input" type="checkbox" value="" />
-                                                        <label className="form-check-label">
-                                                            Subgoal #2
-                                                        </label>
-                                                    </li>
-                                                </ul>
+                                            <li>
+                                                <input className="form-check-input" type="checkbox" value="" />
+                                                <label className="form-check-label">
+                                                    Deliverable #2
+                                                </label>
                                             </li>
                                             <li>
                                                 <input className="form-check-input" type="checkbox" value="" />
                                                 <label className="form-check-label">
-                                                    Goal #2
+                                                    Deliverable #3
+                                                </label>
+                                            </li>
+                                            </li>
+                                            <li>
+                                                <input className="form-check-input" type="checkbox" value="" />
+                                                <label className="form-check-label">
+                                                    Deliverable #4
                                                 </label>
                                             </li>
                                             <li>
                                                 <input className="form-check-input" type="checkbox" value=""/>
                                                 <label className="form-check-label">
-                                                    Goal #3
+                                                    Deliverable #5
                                                 </label>
                                             </li>
                                             <li>
                                                 <input className="form-check-input" type="checkbox" value=""/>
                                                 <label className="form-check-label">
-                                                    Goal #4
+                                                    Deliverable #6
                                                 </label>
                                             </li>
                                         </ul>
@@ -104,11 +100,11 @@ class ToDoList extends Component {
     getCourseColor(name){
         switch(name){
             case "User Interface":
-                return "bg-info"
+                return "ui-badge"
             case "Senior Design":
-                return "bg-success"
+                return "design-badge"
             case "Computer Graphics":
-                return "bg-warning"
+                return "graphics-badge"
             default:
                 return "bg-primary"
         }

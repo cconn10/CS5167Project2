@@ -203,11 +203,11 @@ function CanvasCalendar() {
     return (
         <div className="App">
             <br></br>
-            <button class="open-button" onClick={openForm}>Microsoft Outlook</button>
-            <button class="open-button" onClick={openForm}>Google Calendar</button>
-            <button class="open-button" onClick={openForm}>Apple Calendar</button>
-                <div class="form-popup" id="myForm">
-                    <form class="form-container">
+            <button className="open-button" onClick={openForm}>Microsoft Outlook</button>
+            <button className="open-button" onClick={openForm}>Google Calendar</button>
+            <button className="open-button" onClick={openForm}>Apple Calendar</button>
+                <div className="form-popup" id="myForm">
+                    <form className="form-container">
                         <h1>Account Login</h1>
                         <label for="email"><b>Email</b></label>
                         <input type="text" placeholder="Enter Email" name="email" required></input>
@@ -215,8 +215,8 @@ function CanvasCalendar() {
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required></input>
 
-                        <button type="submit" class="btn">Login</button>
-                        <button type="button" class="btn cancel" onClick={closeForm}>Close</button>
+                        <button type="submit" className="btn">Login</button>
+                        <button type="button" className="btn cancel" onClick={closeForm}>Close</button>
                     </form>
                 </div>
             <h2>Create New Event</h2>
@@ -229,13 +229,13 @@ function CanvasCalendar() {
                 </button> <br></br>
                 <br></br>
                 </div>
-                    <div class='child1'>
+                    <div className='child1'>
                         <br></br>
                         <br></br>
-                        <button class="coursebtn default">All courses</button><br></br>
-                        <button class="coursebtn computer_graphics">Computer Graphics</button><br></br>
-                        <button class="coursebtn senior_design">Senior Design</button><br></br>
-                        <button class="coursebtn userinter">User Interfaces</button><br></br>
+                        <button className="coursebtn default">All courses</button><br></br>
+                        <button className="coursebtn computer_graphics">Computer Graphics</button><br></br>
+                        <button className="coursebtn senior_design">Senior Design</button><br></br>
+                        <button className="coursebtn userinter">User Interfaces</button><br></br>
                         </div>
                     <div>
                 <Calendar 

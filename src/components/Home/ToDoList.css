@@ -36,3 +36,13 @@
     top: 5px;
     right: 5px;
 }
+
+.ui-badge {
+    background-color: #ff9800;
+}
+.design-badge{
+    background-color: #2196F3;
+}
+.graphics-badge {
+    background-color: #04AA6D;
+}

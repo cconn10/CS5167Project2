@@ -5,6 +5,18 @@ import Accordion from './Accordion';
 const WeekAccordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
+  
+    switch(title){
+        case "User Interface":
+            return "bg-info"
+        case "Senior Design":
+            return "bg-success"
+        case "Computer Graphics":
+            return "bg-warning"
+        default:
+            return "bg-primary"
+    }
+
   return (
     <div className="week-accordion-item">
       <div className="week-accordion-title" onClick={() => setIsActive(!isActive)}>

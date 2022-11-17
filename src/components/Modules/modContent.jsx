@@ -38,7 +38,7 @@ class ModContent extends Component {
         return(
             <div class="weekly-div">
             {/* <h3><span>{module.name}</span></h3> */}
-            <div class="list-header">
+            <div class="module-header">
                 Announcements
             </div>
             {module.announcements.map((announcement, index) => (
@@ -48,7 +48,7 @@ class ModContent extends Component {
                     ></Announcement>
                 ))}
             
-            <div class="list-header">
+            <div class="module-header">
                 Files
             </div>
             {module.files.map((file, index) => (
@@ -58,7 +58,7 @@ class ModContent extends Component {
                 ></ModFile>
             ))}
 
-            <div class="list-header">
+            <div class="module-header">
                 Notes
             </div>
         </div>

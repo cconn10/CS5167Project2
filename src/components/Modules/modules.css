@@ -54,3 +54,12 @@
     grid-column: start / line5;
     grid-row: line2 / end ;
 }
+
+.modToDoList {
+    position: relative;
+    right: 20px;
+    height: 100%;
+    padding: 20px;
+    grid-column: line5 / end;
+    grid-row: start / end;
+}

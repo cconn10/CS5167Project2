@@ -21,7 +21,7 @@ class Modules extends Component {
     ];
 
 
-    compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("9/11/22"));
+    compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("9/1/22"));
 
     organizeData = (data) => {
         console.log("Mapped Data")
@@ -55,7 +55,7 @@ class Modules extends Component {
                         ))}
                     </div>
                 </div>
-                <div className="toDoList">
+                <div className="modToDoList">
                     <ToDoList courseInfo={CourseInfo} 
                         uiToDoItems={this.compileToDoItems(Data.ui)} 
                         seniorDesignToDoItems={this.compileToDoItems(Data.senior_design)} 

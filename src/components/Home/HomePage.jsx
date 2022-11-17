@@ -12,7 +12,7 @@ import Data from '../../course-data/data.json'
 class HomePage extends Component {
     state = { }
 
-    compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("10/1/22"));
+    compileToDoItems = data => data.filter(item => item.type === "assignment" && new Date(item.end_or_due) > new Date("9/1/22"));
 
     render() { 
         return (
